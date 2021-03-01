@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form page</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h2>Contact form</h2>
+        <h4>Please fill in your information and we'll be sending your order in no time</h4>
+        <div id="error_message"></div>
+        <form id="myform" onsubmit="return validation();">
+            <div class="input_field">
+                <lable class="firstname">Name &nbsp &nbsp &nbsp;</lable>
+                <input type="text" placeholder="firstName" id="fname">
+                <input type="text" placeholder="lastName" id="lname">
+            </div>
+            <div class="input_field">
+                <lable class="email">Email &nbsp &nbsp &nbsp&nbsp;</lable>
+                <input type="text" placeholder="email" id="email">
+            </div>
+
+            <div class="input_field">
+                <lable class="phone">Phone* &nbsp &nbsp;</lable>
+                <input type="text" placeholder="Phone" id="phone1">
+                <input type="text" placeholder="Phone" id="phone2">
+                <input type="text" placeholder="Phone" id="phone3">
+            </div>
+            <div class="input_field">
+                <lable class="address">Address*&nbsp;</lable>
+                <input type="text" placeholder="address" id="address1" required>
+                <input type="text" placeholder="address" id="address2" required>
+            </div>
+
+            <div class="input_field">
+                <lable class="message">Message&nbsp;</lable>
+                <textarea placeholder="Message" id="message"></textarea>
+            </div>
+            <div class="input_field">
+                <lable class="zipcode">Zipcode &nbsp&nbsp&nbsp;</lable>
+                <input type="text" placeholder="zipcode" id="zipcode">
+            </div>
+            <div class="btn">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
